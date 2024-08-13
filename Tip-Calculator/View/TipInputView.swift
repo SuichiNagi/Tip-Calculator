@@ -11,6 +11,7 @@ class TipInputView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
+        setUI()
     }
     
     private func setUI() {

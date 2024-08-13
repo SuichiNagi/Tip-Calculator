@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		5FB2FDDB2C6B83CA00E138F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */; };
 		5FB2FDDD2C6B83CA00E138F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */; };
-		5FB2FDDF2C6B83CA00E138F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDE2C6B83CA00E138F7 /* ViewController.swift */; };
-		5FB2FDE22C6B83CA00E138F7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2FDE12C6B83CA00E138F7 /* Base */; };
+		5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */; };
 		5FB2FDE42C6B83CB00E138F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2FDE32C6B83CB00E138F7 /* Assets.xcassets */; };
 		5FB2FDE72C6B83CB00E138F7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2FDE62C6B83CB00E138F7 /* Base */; };
 		5FB2FDF22C6B83CB00E138F7 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDF12C6B83CB00E138F7 /* Tip_CalculatorTests.swift */; };
 		5FB2FDFC2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDFB2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift */; };
 		5FB2FDFE2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDFD2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift */; };
+		5FB2FE102C6B87E800E138F7 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE0F2C6B87E800E138F7 /* InlineSnapshotTesting */; };
+		5FB2FE122C6B87E800E138F7 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE112C6B87E800E138F7 /* SnapshotTesting */; };
+		5FB2FE152C6B886E00E138F7 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE142C6B886E00E138F7 /* CombineCocoa */; };
+		5FB2FE172C6B889B00E138F7 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE162C6B889B00E138F7 /* CombineCocoa */; };
+		5FB2FE1A2C6B8EBE00E138F7 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE192C6B8EBE00E138F7 /* LogoView.swift */; };
+		5FB2FE1C2C6B8F7300E138F7 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE1B2C6B8F7300E138F7 /* ResultView.swift */; };
+		5FB2FE1E2C6B90B100E138F7 /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE1D2C6B90B100E138F7 /* BillInputView.swift */; };
+		5FB2FE202C6B90C700E138F7 /* TipInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE1F2C6B90C700E138F7 /* TipInputView.swift */; };
+		5FB2FE222C6B90E200E138F7 /* SplitInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE212C6B90E200E138F7 /* SplitInputView.swift */; };
+		B5F52A3B8F47EBC62672238E /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE76A7AF5385EDBB12E8060B /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework */; };
+		DF66F913E79F3005FB5D4244 /* Pods_Tip_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C949686705187F6BF7D945 /* Pods_Tip_Calculator.framework */; };
+		F336E08E4BA66178910831AF /* Pods_Tip_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15C949686705187F6BF7D945 /* Pods_Tip_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6B075CE27107E8EED33BB9 /* Pods-Tip-Calculator-Tip-CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator-Tip-CalculatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Tip-Calculator-Tip-CalculatorUITests/Pods-Tip-Calculator-Tip-CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		481388CA2287677AAE3FF18E /* Pods-Tip-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		585B72024A1FDAE9C32B6773 /* Pods-Tip-CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-CalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-Tip-CalculatorTests/Pods-Tip-CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5FB2FDD72C6B83CA00E138F7 /* Tip-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5FB2FDDE2C6B83CA00E138F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FB2FDE12C6B83CA00E138F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
 		5FB2FDE32C6B83CB00E138F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB2FDE62C6B83CB00E138F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FB2FDE82C6B83CB00E138F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +63,18 @@
 		5FB2FDF72C6B83CB00E138F7 /* Tip-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FDFB2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		5FB2FDFD2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FB2FE0A2C6B856500E138F7 /* CombineCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CombineCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB2FE0C2C6B864600E138F7 /* CombineCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CombineCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB2FE192C6B8EBE00E138F7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		5FB2FE1B2C6B8F7300E138F7 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		5FB2FE1D2C6B90B100E138F7 /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
+		5FB2FE1F2C6B90C700E138F7 /* TipInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInputView.swift; sourceTree = "<group>"; };
+		5FB2FE212C6B90E200E138F7 /* SplitInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitInputView.swift; sourceTree = "<group>"; };
+		69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9082D4D4414ADB643890A4BE /* Pods-Tip-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		BF982A229B3E2350485DA8B7 /* Pods-Tip-CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-CalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-Tip-CalculatorTests/Pods-Tip-CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE76A7AF5385EDBB12E8060B /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_Calculator_Tip_CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3F02144CC1F197E3577FA1 /* Pods-Tip-Calculator-Tip-CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator-Tip-CalculatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tip-Calculator-Tip-CalculatorUITests/Pods-Tip-Calculator-Tip-CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF66F913E79F3005FB5D4244 /* Pods_Tip_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB2FE122C6B87E800E138F7 /* SnapshotTesting in Frameworks */,
+				5FB2FE102C6B87E800E138F7 /* InlineSnapshotTesting in Frameworks */,
+				5FB2FE152C6B886E00E138F7 /* CombineCocoa in Frameworks */,
+				F336E08E4BA66178910831AF /* Pods_Tip_CalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB2FE172C6B889B00E138F7 /* CombineCocoa in Frameworks */,
+				B5F52A3B8F47EBC62672238E /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +116,8 @@
 				5FB2FDF02C6B83CB00E138F7 /* Tip-CalculatorTests */,
 				5FB2FDFA2C6B83CB00E138F7 /* Tip-CalculatorUITests */,
 				5FB2FDD82C6B83CA00E138F7 /* Products */,
+				9A335994EA5218D05C128B9B /* Pods */,
+				74FB6F1B02F9E1C229B13C92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +136,8 @@
 			children = (
 				5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */,
 				5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */,
-				5FB2FDDE2C6B83CA00E138F7 /* ViewController.swift */,
-				5FB2FDE02C6B83CA00E138F7 /* Main.storyboard */,
+				5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */,
+				5FB2FE182C6B8E9A00E138F7 /* View */,
 				5FB2FDE32C6B83CB00E138F7 /* Assets.xcassets */,
 				5FB2FDE52C6B83CB00E138F7 /* LaunchScreen.storyboard */,
 				5FB2FDE82C6B83CB00E138F7 /* Info.plist */,
@@ -127,6 +162,43 @@
 			path = "Tip-CalculatorUITests";
 			sourceTree = "<group>";
 		};
+		5FB2FE182C6B8E9A00E138F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FB2FE192C6B8EBE00E138F7 /* LogoView.swift */,
+				5FB2FE1B2C6B8F7300E138F7 /* ResultView.swift */,
+				5FB2FE1D2C6B90B100E138F7 /* BillInputView.swift */,
+				5FB2FE1F2C6B90C700E138F7 /* TipInputView.swift */,
+				5FB2FE212C6B90E200E138F7 /* SplitInputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74FB6F1B02F9E1C229B13C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB2FE0C2C6B864600E138F7 /* CombineCocoa.framework */,
+				5FB2FE0A2C6B856500E138F7 /* CombineCocoa.framework */,
+				15C949686705187F6BF7D945 /* Pods_Tip_Calculator.framework */,
+				EE76A7AF5385EDBB12E8060B /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework */,
+				69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A335994EA5218D05C128B9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				481388CA2287677AAE3FF18E /* Pods-Tip-Calculator.debug.xcconfig */,
+				9082D4D4414ADB643890A4BE /* Pods-Tip-Calculator.release.xcconfig */,
+				FC3F02144CC1F197E3577FA1 /* Pods-Tip-Calculator-Tip-CalculatorUITests.debug.xcconfig */,
+				3C6B075CE27107E8EED33BB9 /* Pods-Tip-Calculator-Tip-CalculatorUITests.release.xcconfig */,
+				BF982A229B3E2350485DA8B7 /* Pods-Tip-CalculatorTests.debug.xcconfig */,
+				585B72024A1FDAE9C32B6773 /* Pods-Tip-CalculatorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FB2FE012C6B83CB00E138F7 /* Build configuration list for PBXNativeTarget "Tip-Calculator" */;
 			buildPhases = (
+				1118A1595AA54DB85E6BA259 /* [CP] Check Pods Manifest.lock */,
 				5FB2FDD32C6B83CA00E138F7 /* Sources */,
 				5FB2FDD42C6B83CA00E138F7 /* Frameworks */,
 				5FB2FDD52C6B83CA00E138F7 /* Resources */,
+				74042DD56522D5F0DE0208CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FB2FE042C6B83CB00E138F7 /* Build configuration list for PBXNativeTarget "Tip-CalculatorTests" */;
 			buildPhases = (
+				F93CA7337B643CFD60C8CE4C /* [CP] Check Pods Manifest.lock */,
 				5FB2FDE92C6B83CB00E138F7 /* Sources */,
 				5FB2FDEA2C6B83CB00E138F7 /* Frameworks */,
 				5FB2FDEB2C6B83CB00E138F7 /* Resources */,
@@ -161,6 +236,11 @@
 				5FB2FDEF2C6B83CB00E138F7 /* PBXTargetDependency */,
 			);
 			name = "Tip-CalculatorTests";
+			packageProductDependencies = (
+				5FB2FE0F2C6B87E800E138F7 /* InlineSnapshotTesting */,
+				5FB2FE112C6B87E800E138F7 /* SnapshotTesting */,
+				5FB2FE142C6B886E00E138F7 /* CombineCocoa */,
+			);
 			productName = "Tip-CalculatorTests";
 			productReference = 5FB2FDED2C6B83CB00E138F7 /* Tip-CalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -169,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FB2FE072C6B83CB00E138F7 /* Build configuration list for PBXNativeTarget "Tip-CalculatorUITests" */;
 			buildPhases = (
+				3EFE242AEA19D60B740DA9A7 /* [CP] Check Pods Manifest.lock */,
 				5FB2FDF32C6B83CB00E138F7 /* Sources */,
 				5FB2FDF42C6B83CB00E138F7 /* Frameworks */,
 				5FB2FDF52C6B83CB00E138F7 /* Resources */,
+				0D41AFE59632B427FB479EDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +261,9 @@
 				5FB2FDF92C6B83CB00E138F7 /* PBXTargetDependency */,
 			);
 			name = "Tip-CalculatorUITests";
+			packageProductDependencies = (
+				5FB2FE162C6B889B00E138F7 /* CombineCocoa */,
+			);
 			productName = "Tip-CalculatorUITests";
 			productReference = 5FB2FDF72C6B83CB00E138F7 /* Tip-CalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -215,6 +300,10 @@
 				Base,
 			);
 			mainGroup = 5FB2FDCE2C6B83CA00E138F7;
+			packageReferences = (
+				5FB2FE0E2C6B87E800E138F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				5FB2FE132C6B886E00E138F7 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
 			productRefGroup = 5FB2FDD82C6B83CA00E138F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +322,6 @@
 			files = (
 				5FB2FDE42C6B83CB00E138F7 /* Assets.xcassets in Resources */,
 				5FB2FDE72C6B83CB00E138F7 /* Base in Resources */,
-				5FB2FDE22C6B83CA00E138F7 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +341,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D41AFE59632B427FB479EDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tip-Calculator-Tip-CalculatorUITests/Pods-Tip-Calculator-Tip-CalculatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tip-Calculator-Tip-CalculatorUITests/Pods-Tip-Calculator-Tip-CalculatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tip-Calculator-Tip-CalculatorUITests/Pods-Tip-Calculator-Tip-CalculatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1118A1595AA54DB85E6BA259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tip-Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EFE242AEA19D60B740DA9A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tip-Calculator-Tip-CalculatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74042DD56522D5F0DE0208CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93CA7337B643CFD60C8CE4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tip-CalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FB2FDD32C6B83CA00E138F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB2FDDF2C6B83CA00E138F7 /* ViewController.swift in Sources */,
+				5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */,
+				5FB2FE1A2C6B8EBE00E138F7 /* LogoView.swift in Sources */,
+				5FB2FE1E2C6B90B100E138F7 /* BillInputView.swift in Sources */,
+				5FB2FE1C2C6B8F7300E138F7 /* ResultView.swift in Sources */,
 				5FB2FDDB2C6B83CA00E138F7 /* AppDelegate.swift in Sources */,
 				5FB2FDDD2C6B83CA00E138F7 /* SceneDelegate.swift in Sources */,
+				5FB2FE222C6B90E200E138F7 /* SplitInputView.swift in Sources */,
+				5FB2FE202C6B90C700E138F7 /* TipInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +493,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5FB2FDE02C6B83CA00E138F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FB2FDE12C6B83CA00E138F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5FB2FDE52C6B83CB00E138F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,17 +625,18 @@
 		};
 		5FB2FE022C6B83CB00E138F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481388CA2287677AAE3FF18E /* Pods-Tip-Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76FZX58B63;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tip-Calculator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,17 +654,18 @@
 		};
 		5FB2FE032C6B83CB00E138F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9082D4D4414ADB643890A4BE /* Pods-Tip-Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76FZX58B63;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tip-Calculator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,6 +683,7 @@
 		};
 		5FB2FE052C6B83CB00E138F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF982A229B3E2350485DA8B7 /* Pods-Tip-CalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +704,7 @@
 		};
 		5FB2FE062C6B83CB00E138F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585B72024A1FDAE9C32B6773 /* Pods-Tip-CalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +725,7 @@
 		};
 		5FB2FE082C6B83CB00E138F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3F02144CC1F197E3577FA1 /* Pods-Tip-Calculator-Tip-CalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +744,7 @@
 		};
 		5FB2FE092C6B83CB00E138F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6B075CE27107E8EED33BB9 /* Pods-Tip-Calculator-Tip-CalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +801,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FB2FE0E2C6B87E800E138F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.17.4;
+			};
+		};
+		5FB2FE132C6B886E00E138F7 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FB2FE0F2C6B87E800E138F7 /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FB2FE0E2C6B87E800E138F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		5FB2FE112C6B87E800E138F7 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FB2FE0E2C6B87E800E138F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		5FB2FE142C6B886E00E138F7 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FB2FE132C6B886E00E138F7 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		5FB2FE162C6B889B00E138F7 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FB2FE132C6B886E00E138F7 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FB2FDCF2C6B83CA00E138F7 /* Project object */;
 }

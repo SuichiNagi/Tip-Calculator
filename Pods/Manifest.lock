@@ -1,0 +1,20 @@
+PODS:
+  - CombineCocoa (0.4.1)
+  - SnapKit (5.7.1)
+
+DEPENDENCIES:
+  - CombineCocoa
+  - SnapKit (~> 5.7.0)
+
+SPEC REPOS:
+  trunk:
+    - CombineCocoa
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+
+PODFILE CHECKSUM: 37460867878fe392b7fbad0a3b51c775293fef0c
+
+COCOAPODS: 1.15.2

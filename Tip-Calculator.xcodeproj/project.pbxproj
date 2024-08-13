@@ -24,6 +24,9 @@
 		5FB2FE1E2C6B90B100E138F7 /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE1D2C6B90B100E138F7 /* BillInputView.swift */; };
 		5FB2FE202C6B90C700E138F7 /* TipInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE1F2C6B90C700E138F7 /* TipInputView.swift */; };
 		5FB2FE222C6B90E200E138F7 /* SplitInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE212C6B90E200E138F7 /* SplitInputView.swift */; };
+		5FB2FE252C6B9B7000E138F7 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE242C6B9B7000E138F7 /* ThemeColor.swift */; };
+		5FB2FE272C6B9B7700E138F7 /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE262C6B9B7700E138F7 /* ThemeFont.swift */; };
+		5FB2FE2A2C6B9BC100E138F7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE292C6B9BC100E138F7 /* UIColor+Extension.swift */; };
 		B5F52A3B8F47EBC62672238E /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE76A7AF5385EDBB12E8060B /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework */; };
 		DF66F913E79F3005FB5D4244 /* Pods_Tip_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C949686705187F6BF7D945 /* Pods_Tip_Calculator.framework */; };
 		F336E08E4BA66178910831AF /* Pods_Tip_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */; };
@@ -70,6 +73,9 @@
 		5FB2FE1D2C6B90B100E138F7 /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
 		5FB2FE1F2C6B90C700E138F7 /* TipInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInputView.swift; sourceTree = "<group>"; };
 		5FB2FE212C6B90E200E138F7 /* SplitInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitInputView.swift; sourceTree = "<group>"; };
+		5FB2FE242C6B9B7000E138F7 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		5FB2FE262C6B9B7700E138F7 /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
+		5FB2FE292C6B9BC100E138F7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9082D4D4414ADB643890A4BE /* Pods-Tip-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		BF982A229B3E2350485DA8B7 /* Pods-Tip-CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-CalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-Tip-CalculatorTests/Pods-Tip-CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 		5FB2FDD92C6B83CA00E138F7 /* Tip-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				5FB2FE282C6B9B9C00E138F7 /* extension */,
+				5FB2FE232C6B9B5C00E138F7 /* config */,
 				5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */,
 				5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */,
 				5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */,
@@ -172,6 +180,23 @@
 				5FB2FE212C6B90E200E138F7 /* SplitInputView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5FB2FE232C6B9B5C00E138F7 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				5FB2FE242C6B9B7000E138F7 /* ThemeColor.swift */,
+				5FB2FE262C6B9B7700E138F7 /* ThemeFont.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		5FB2FE282C6B9B9C00E138F7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FB2FE292C6B9BC100E138F7 /* UIColor+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		74FB6F1B02F9E1C229B13C92 /* Frameworks */ = {
@@ -451,9 +476,12 @@
 			files = (
 				5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */,
 				5FB2FE1A2C6B8EBE00E138F7 /* LogoView.swift in Sources */,
+				5FB2FE252C6B9B7000E138F7 /* ThemeColor.swift in Sources */,
+				5FB2FE2A2C6B9BC100E138F7 /* UIColor+Extension.swift in Sources */,
 				5FB2FE1E2C6B90B100E138F7 /* BillInputView.swift in Sources */,
 				5FB2FE1C2C6B8F7300E138F7 /* ResultView.swift in Sources */,
 				5FB2FDDB2C6B83CA00E138F7 /* AppDelegate.swift in Sources */,
+				5FB2FE272C6B9B7700E138F7 /* ThemeFont.swift in Sources */,
 				5FB2FDDD2C6B83CA00E138F7 /* SceneDelegate.swift in Sources */,
 				5FB2FE222C6B90E200E138F7 /* SplitInputView.swift in Sources */,
 				5FB2FE202C6B90C700E138F7 /* TipInputView.swift in Sources */,

@@ -19,7 +19,7 @@ class CalculatorVC: UIViewController {
     }
     
     private func setUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = ThemeColor.bg
         
         view.addSubview(vStackView)
         vStackView.snp.makeConstraints { make in

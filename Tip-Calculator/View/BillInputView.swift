@@ -15,31 +15,31 @@ class BillInputView: UIView {
     }
     
     private func setUI() {
-        [headerView, textFieldContainverView].forEach(addSubview(_:))
+        [headerView, textFieldContainerView].forEach(addSubview(_:))
         
         headerView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
-            make.centerY.equalTo(textFieldContainverView.snp.centerY)
+            make.centerY.equalTo(textFieldContainerView.snp.centerY)
             make.width.equalTo(68)
-            make.trailing.equalTo(textFieldContainverView.snp.leading).offset(-24)
+            make.trailing.equalTo(textFieldContainerView.snp.leading).offset(-24)
         }
         
-        textFieldContainverView.snp.makeConstraints { make in
+        textFieldContainerView.snp.makeConstraints { make in
             make.top.trailing.bottom.equalToSuperview()
         }
         
-        textFieldContainverView.addSubview(currencyDenominationLabel)
-        textFieldContainverView.addSubview(textField)
+        textFieldContainerView.addSubview(currencyDenominationLabel)
+        textFieldContainerView.addSubview(textField)
         
         currencyDenominationLabel.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
-            make.leading.equalTo(textFieldContainverView.snp.leading).offset(16)
+            make.leading.equalTo(textFieldContainerView.snp.leading).offset(16)
         }
         
         textField.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
             make.leading.equalTo(currencyDenominationLabel.snp.trailing).offset(16)
-            make.trailing.equalTo(textFieldContainverView.snp.trailing).offset(-16)
+            make.trailing.equalTo(textFieldContainerView.snp.trailing).offset(-16)
         }
     }
     
@@ -57,7 +57,7 @@ class BillInputView: UIView {
         return headerView
     }()
     
-    private lazy var textFieldContainverView: UIView =  {
+    private lazy var textFieldContainerView: UIView =  {
         let view = UIView()
         view.backgroundColor = .white
         view.addCornerRadius(radius: 8.0)

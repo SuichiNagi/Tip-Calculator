@@ -28,6 +28,7 @@
 		5FB2FE272C6B9B7700E138F7 /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE262C6B9B7700E138F7 /* ThemeFont.swift */; };
 		5FB2FE2A2C6B9BC100E138F7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FE292C6B9BC100E138F7 /* UIColor+Extension.swift */; };
 		5FCC87222C6C3CB800991B1D /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC87212C6C3CB800991B1D /* LabelFactory.swift */; };
+		5FCC87242C6C57F300991B1D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC87232C6C57F300991B1D /* UIView+Extension.swift */; };
 		B5F52A3B8F47EBC62672238E /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE76A7AF5385EDBB12E8060B /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework */; };
 		DF66F913E79F3005FB5D4244 /* Pods_Tip_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C949686705187F6BF7D945 /* Pods_Tip_Calculator.framework */; };
 		F336E08E4BA66178910831AF /* Pods_Tip_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */; };
@@ -78,6 +79,7 @@
 		5FB2FE262C6B9B7700E138F7 /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		5FB2FE292C6B9BC100E138F7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5FCC87212C6C3CB800991B1D /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		5FCC87232C6C57F300991B1D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		69569020BAC20241390966B7 /* Pods_Tip_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9082D4D4414ADB643890A4BE /* Pods-Tip-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		BF982A229B3E2350485DA8B7 /* Pods-Tip-CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-CalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-Tip-CalculatorTests/Pods-Tip-CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB2FE292C6B9BC100E138F7 /* UIColor+Extension.swift */,
+				5FCC87232C6C57F300991B1D /* UIView+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */,
+				5FCC87242C6C57F300991B1D /* UIView+Extension.swift in Sources */,
 				5FB2FE1A2C6B8EBE00E138F7 /* LogoView.swift in Sources */,
 				5FB2FE252C6B9B7000E138F7 /* ThemeColor.swift in Sources */,
 				5FB2FE2A2C6B9BC100E138F7 /* UIColor+Extension.swift in Sources */,
@@ -581,7 +585,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -644,7 +648,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

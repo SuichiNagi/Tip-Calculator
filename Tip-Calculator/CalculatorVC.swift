@@ -14,18 +14,20 @@ class CalculatorVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         setUI()
     }
     
     private func setUI() {
         view.backgroundColor = ThemeColor.bg
         
+        arrayView = [logoView, resultView, billInputView, tipInputView, splitInputView]
+        
         view.addSubview(vStackView)
         vStackView.snp.makeConstraints { make in
             make.leading.equalTo(view.snp.leadingMargin).offset(16)
             make.trailing.equalTo(view.snp.trailingMargin).offset(-16)
-            make.bottom.equalTo(view.snp.bottomMargin).offset(-16)
+            make.bottom.equalTo(view.snp.bottomMargin).offset(-85)
             make.top.equalTo(view.snp.topMargin).offset(16)
         }
         
@@ -51,7 +53,6 @@ class CalculatorVC: UIViewController {
     }
     
     private lazy var vStackView: UIStackView = {
-        arrayView = [logoView, resultView, billInputView, tipInputView, splitInputView]
         let stackView = UIStackView(arrangedSubviews: arrayView)
         stackView.axis = .vertical
         stackView.spacing = 36
@@ -82,5 +83,9 @@ class CalculatorVC: UIViewController {
         let splitInputView = SplitInputView()
         return splitInputView
     }()
+}
+
+#Preview() {
+    CalculatorVC()
 }
 

@@ -64,7 +64,4 @@ class LogoView: UIView {
         stackView.alignment = .center
         return stackView
     }()
-    
-    
-    
 }

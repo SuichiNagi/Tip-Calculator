@@ -6,12 +6,22 @@
 //
 
 import UIKit
+import Combine
+import CombineCocoa
 
 class BillInputView: UIView {
+    
+    private var cancellable = Set<AnyCancellable>()
+    
+    private let billSubject: PassthroughSubject<Double, Never> = .init()
+    var valuePublisher: AnyPublisher<Double, Never> {
+        return billSubject.eraseToAnyPublisher()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
         setUI()
+        observe()
     }
     
     private func setUI() {
@@ -45,6 +55,12 @@ class BillInputView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func observe() {
+        textField.textPublisher.sink { [unowned self] text in
+            billSubject.send(text?.doubleValue ?? 0)
+        }.store(in: &cancellable)
     }
     
     @objc private func doneButtonTapped() {

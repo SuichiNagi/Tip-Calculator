@@ -10,6 +10,8 @@ import Combine
 
 class CalculatorViewModel {
     
+    var cancellable = Set<AnyCancellable>()
+    
     struct Input {
         let billPublisher: AnyPublisher<Double, Never>
         let tipPublisher: AnyPublisher<Tip, Never>

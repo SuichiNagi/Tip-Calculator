@@ -7,8 +7,12 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 class CalculatorVC: UIViewController {
+    
+    private let calculatorVM = CalculatorViewModel()
+    private var cancelables = Set<AnyCancellable>()
     
     private var arrayView: [UIView] = []
 
@@ -16,6 +20,21 @@ class CalculatorVC: UIViewController {
         super.viewDidLoad()
 
         setUI()
+        bind()
+    }
+    
+    private func bind() {
+        
+        let input = CalculatorViewModel.Input(
+            billPublisher: Just(10).eraseToAnyPublisher(),
+            tipPublisher: Just(.tenPercent).eraseToAnyPublisher(),
+            splitPublisher: Just(5).eraseToAnyPublisher())
+        
+        let output = calculatorVM.transform(input: input)
+        
+        output.updateViewPublisher.sink { result in
+            print(result)
+        }.store(in: &cancelables)
     }
     
     private func setUI() {

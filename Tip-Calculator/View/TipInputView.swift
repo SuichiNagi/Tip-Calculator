@@ -42,6 +42,34 @@ class TipInputView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func handleCustomTipButton() {
+        parentViewController?.present(alertController, animated: true)
+    }
+    
+    private lazy var alertController: UIAlertController = {
+        let controller = UIAlertController(
+            title: "Enter Custom Tip",
+            message: nil,
+            preferredStyle: .alert)
+        controller.addTextField { textfield in
+            textfield.placeholder = "Make it generous!"
+            textfield.keyboardType = .numberPad
+            textfield.autocorrectionType = .no
+        }
+        let cancelAction = UIAlertAction(
+            title: "Cancel",
+            style: .default)
+        let okAction = UIAlertAction(
+            title: "Ok",
+            style: .default) { [weak self] _ in
+                guard let text = controller.textFields?.first?.text,
+                      let value = Int(text) else { return }
+                self?.tipSubject.send(.custom(value: value))
+            }
+        [okAction, cancelAction].forEach(controller.addAction(_:))
+        return controller
+    }()
+    
     private lazy var headerView: UIView = {
         let view = HeaderView()
         view.configure(topText: "Choose", bottomText: "your tip")
@@ -97,6 +125,9 @@ class TipInputView: UIView {
         button.backgroundColor = ThemeColor.primary
         button.tintColor = .white
         button.addCornerRadius(radius: 8.0)
+        button.tapPublisher.sink { [weak self] _ in
+            self?.handleCustomTipButton()
+        }.store(in: &cancellable)
         return button
     }()
     

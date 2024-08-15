@@ -6,12 +6,22 @@
 //
 
 import UIKit
+import Combine
+import CombineCocoa
 
 class SplitInputView: UIView {
+    
+    private var cancellable = Set<AnyCancellable>()
+    
+    private let splitSubject = CurrentValueSubject<Int, Never>(1)
+    var valuePublisher: AnyPublisher<Int, Never> {
+        return splitSubject.removeDuplicates().eraseToAnyPublisher()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
         setUI()
+        observe()
     }
     
     private func setUI() {
@@ -39,6 +49,12 @@ class SplitInputView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func observe() {
+        splitSubject.sink { [unowned self] quantity in
+            quantityLabel.text = quantity.stringValue
+        }.store(in: &cancellable)
+    }
+    
     private lazy var headerView: HeaderView = {
         let view = HeaderView()
         view.configure(topText: "Split", bottomText: "the total")
@@ -56,11 +72,19 @@ class SplitInputView: UIView {
     
     private lazy var decrementButton: UIButton = {
         let button = buildButton(text: "-", corners: [.layerMinXMaxYCorner, .layerMinXMinYCorner])
+        button.tapPublisher.flatMap { [unowned self] _ in
+            Just(splitSubject.value == 1 ? 1 : splitSubject.value - 1)
+        }.assign(to: \.value, on: splitSubject)
+            .store(in: &cancellable)
         return button
     }()
     
     private lazy var incrementButton: UIButton = {
         let button = buildButton(text: "+", corners: [.layerMaxXMinYCorner, .layerMaxXMaxYCorner])
+        button.tapPublisher.flatMap { [unowned self] _ in
+            Just(splitSubject.value + 1)
+        }.assign(to: \.value, on:splitSubject)
+            .store(in: &cancellable)
         return button
     }()
     

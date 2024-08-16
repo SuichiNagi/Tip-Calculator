@@ -24,6 +24,10 @@ class SplitInputView: UIView {
         observe()
     }
     
+    func reset() {
+        splitSubject.send(1)
+    }
+    
     private func setUI() {
         [headerView, stackView].forEach(addSubview(_:))
         

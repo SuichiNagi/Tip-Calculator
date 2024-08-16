@@ -24,6 +24,11 @@ class BillInputView: UIView {
         observe()
     }
     
+    func reset() {
+        textField.text = nil
+        billSubject.send(0)
+    }
+    
     private func setUI() {
         [headerView, textFieldContainerView].forEach(addSubview(_:))
         

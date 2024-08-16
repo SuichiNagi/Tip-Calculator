@@ -33,11 +33,31 @@ class ResultView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(result: Result) {
+        let text = NSMutableAttributedString(
+            string: String(result.amountPerPerson),
+            attributes: [.font: ThemeFont.bold(ofSize: 48)])
+        text.addAttributes([.font: ThemeFont.bold(ofSize: 24)], range: NSMakeRange(0, 1))
+        amountPerPersonLabel.attributedText = text
+        totalBillView.configure(text: String(result.totalBill))
+        totalTipView.configure(text: String(result.totalTip))
+    }
+    
     private func buildSpacerView(height: CGFloat) -> UIView {
         let view = UIView()
         view.heightAnchor.constraint(equalToConstant: height).isActive = true
         return view
     }
+    
+    private lazy var totalBillView: AmountView = {
+        let view = AmountView(title: "Total Bill")
+        return view
+    }()
+    
+    private lazy var totalTipView: AmountView = {
+        let view = AmountView(title: "Total Tip")
+        return view
+    }()
     
     private lazy var headerLabel: UILabel = {
         LabelFactory.build(text: "Total p/person", font: ThemeFont.demibold(ofSize: 18))
@@ -77,9 +97,9 @@ class ResultView: UIView {
     
     private lazy var hStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            AmountView(title: "Total bill"),
+            totalBillView,
             UIView(),
-            AmountView(title: "Total tip")
+            totalTipView
         ])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually

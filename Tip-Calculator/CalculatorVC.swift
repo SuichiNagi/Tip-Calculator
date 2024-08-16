@@ -22,7 +22,6 @@ class CalculatorVC: UIViewController {
 
         setUI()
         bind()
-        observe()
     }
     
     private func bind() {
@@ -30,22 +29,22 @@ class CalculatorVC: UIViewController {
         let input = CalculatorViewModel.Input(
             billPublisher: billInputView.valuePublisher,
             tipPublisher: tipInputView.valuePublisher,
-            splitPublisher: splitInputView.valuePublisher)
+            splitPublisher: splitInputView.valuePublisher,
+            logoViewTapPublisher: logoViewTapPublisher,
+            viewTapPublisher: viewTapPublisher)
         
         let output = calculatorVM.transform(input: input)
         
         output.updateViewPublisher.sink { [unowned self] result in
             resultView.configure(result: result)
         }.store(in: &cancellable)
-    }
-    
-    private func observe() {
-        viewTapPublisher.sink { [unowned self] _ in
-            view.endEditing(true)
+        
+        output.resetCalculatorPublisher.sink { _ in
+            print("tap tap tap")
         }.store(in: &cancellable)
         
-        logoViewTapPublisher.sink { _ in
-            print("logo view is tapped")
+        output.endEditingPublisher.sink { [unowned self] _ in
+            view.endEditing(true)
         }.store(in: &cancellable)
     }
     

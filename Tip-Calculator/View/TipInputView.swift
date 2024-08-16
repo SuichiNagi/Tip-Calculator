@@ -44,7 +44,7 @@ class TipInputView: UIView {
                 print(value)
                 customTipButton.backgroundColor = ThemeColor.secondary
                 let text = NSMutableAttributedString(
-                    string: "$\(value)",
+                    string: "₱\(value)",
                     attributes: [.font: ThemeFont.bold(ofSize: 20)])
                 text.addAttributes([.font: ThemeFont.bold(ofSize: 14)], range: NSMakeRange(0, 1))
                 customTipButton.setAttributedTitle(text, for: .normal)

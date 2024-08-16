@@ -35,12 +35,12 @@ class ResultView: UIView {
     
     func configure(result: Result) {
         let text = NSMutableAttributedString(
-            string: String(result.amountPerPerson),
+            string: result.amountPerPerson.currencyFormatted,
             attributes: [.font: ThemeFont.bold(ofSize: 48)])
         text.addAttributes([.font: ThemeFont.bold(ofSize: 24)], range: NSMakeRange(0, 1))
         amountPerPersonLabel.attributedText = text
-        totalBillView.configure(text: String(result.totalBill))
-        totalTipView.configure(text: String(result.totalTip))
+        totalBillView.configure(amount: result.totalBill)
+        totalTipView.configure(amount: result.totalTip)
     }
     
     private func buildSpacerView(height: CGFloat) -> UIView {
@@ -67,7 +67,7 @@ class ResultView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         let text = NSMutableAttributedString(
-            string: "$0",
+            string: "₱0",
             attributes: [.font: ThemeFont.bold(ofSize: 48)])
         text.addAttributes([
             .font: ThemeFont.bold(ofSize: 24)

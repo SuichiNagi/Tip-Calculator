@@ -81,7 +81,7 @@ class BillInputView: UIView {
     }()
     
     private lazy var currencyDenominationLabel: UILabel = {
-        let label = LabelFactory.build(text: "$", font: ThemeFont.bold(ofSize: 24))
+        let label = LabelFactory.build(text: "₱", font: ThemeFont.bold(ofSize: 24))
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return label
     }()

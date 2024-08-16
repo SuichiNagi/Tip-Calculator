@@ -52,7 +52,7 @@ class CalculatorViewModel {
         case .fifteenPercent:
             return bill * 0.15
         case .twentyPercent:
-            return bill * 2.0
+            return bill * 0.2
         case .custom(let value):
             return Double(value)
         }

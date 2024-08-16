@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import Combine
+import CombineCocoa
 
 class CalculatorVC: UIViewController {
     
@@ -21,6 +22,7 @@ class CalculatorVC: UIViewController {
 
         setUI()
         bind()
+        observe()
     }
     
     private func bind() {
@@ -36,6 +38,33 @@ class CalculatorVC: UIViewController {
             resultView.configure(result: result)
         }.store(in: &cancellable)
     }
+    
+    private func observe() {
+        viewTapPublisher.sink { [unowned self] _ in
+            view.endEditing(true)
+        }.store(in: &cancellable)
+        
+        logoViewTapPublisher.sink { _ in
+            print("logo view is tapped")
+        }.store(in: &cancellable)
+    }
+    
+    private lazy var viewTapPublisher: AnyPublisher<Void, Never> = {
+        let tapGesture = UITapGestureRecognizer(target: self, action: nil)
+        view.addGestureRecognizer(tapGesture)
+        return tapGesture.tapPublisher.flatMap { _ in
+            Just(())
+        }.eraseToAnyPublisher()
+    }()
+    
+    private lazy var logoViewTapPublisher: AnyPublisher<Void, Never> = {
+        let tapGesture = UITapGestureRecognizer(target: self, action: nil)
+        tapGesture.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tapGesture)
+        return tapGesture.tapPublisher.flatMap { _ in
+            Just(())
+        }.eraseToAnyPublisher()
+    }()
     
     private func setUI() {
         view.backgroundColor = ThemeColor.bg

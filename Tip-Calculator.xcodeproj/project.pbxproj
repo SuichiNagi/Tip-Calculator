@@ -160,7 +160,6 @@
 		5FB2FDCE2C6B83CA00E138F7 = {
 			isa = PBXGroup;
 			children = (
-				5F9DBC852C6F0DBC0064F5B9 /* service */,
 				5FB2FDD92C6B83CA00E138F7 /* Tip-Calculator */,
 				5FB2FDF02C6B83CB00E138F7 /* Tip-CalculatorTests */,
 				5FB2FDFA2C6B83CB00E138F7 /* Tip-CalculatorUITests */,
@@ -183,15 +182,16 @@
 		5FB2FDD92C6B83CA00E138F7 /* Tip-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */,
+				5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */,
+				5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */,
+				5F9DBC852C6F0DBC0064F5B9 /* service */,
 				5F9DBC822C6F0D800064F5B9 /* resource */,
 				5FCC872C2C6C99F900991B1D /* ViewModel */,
 				5FCC87272C6C805200991B1D /* model */,
-				5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */,
-				5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */,
 				5FCC87202C6C3CA800991B1D /* factory */,
 				5FB2FE282C6B9B9C00E138F7 /* extension */,
 				5FB2FE232C6B9B5C00E138F7 /* config */,
-				5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */,
 				5FB2FE182C6B8E9A00E138F7 /* View */,
 				5FB2FDE32C6B83CB00E138F7 /* Assets.xcassets */,
 				5FB2FDE52C6B83CB00E138F7 /* LaunchScreen.storyboard */,

@@ -11,6 +11,8 @@
 		5F045F642C6DA88900D737DE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F045F632C6DA88900D737DE /* String+Extension.swift */; };
 		5F045F662C6DC5FF00D737DE /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F045F652C6DC5FF00D737DE /* UIResponder+Extension.swift */; };
 		5F9DBC812C6F003A0064F5B9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DBC802C6F003A0064F5B9 /* Double+Extension.swift */; };
+		5F9DBC842C6F0D9C0064F5B9 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DBC832C6F0D9C0064F5B9 /* click.m4a */; };
+		5F9DBC872C6F0DCC0064F5B9 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */; };
 		5FB2FDDB2C6B83CA00E138F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */; };
 		5FB2FDDD2C6B83CA00E138F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */; };
 		5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */; };
@@ -68,6 +70,8 @@
 		5F045F632C6DA88900D737DE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5F045F652C6DC5FF00D737DE /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 		5F9DBC802C6F003A0064F5B9 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		5F9DBC832C6F0D9C0064F5B9 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
 		5FB2FDD72C6B83CA00E138F7 /* Tip-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F9DBC822C6F0D800064F5B9 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DBC832C6F0D9C0064F5B9 /* click.m4a */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		5F9DBC852C6F0DBC0064F5B9 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		5FB2FDCE2C6B83CA00E138F7 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +179,8 @@
 		5FB2FDD92C6B83CA00E138F7 /* Tip-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				5F9DBC852C6F0DBC0064F5B9 /* service */,
+				5F9DBC822C6F0D800064F5B9 /* resource */,
 				5FCC872C2C6C99F900991B1D /* ViewModel */,
 				5FCC87272C6C805200991B1D /* model */,
 				5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */,
@@ -398,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9DBC842C6F0D9C0064F5B9 /* click.m4a in Resources */,
 				5FB2FDE42C6B83CB00E138F7 /* Assets.xcassets in Resources */,
 				5FB2FDE72C6B83CB00E138F7 /* Base in Resources */,
 			);
@@ -539,6 +562,7 @@
 				5FB2FE2A2C6B9BC100E138F7 /* UIColor+Extension.swift in Sources */,
 				5FB2FE1E2C6B90B100E138F7 /* BillInputView.swift in Sources */,
 				5FB2FE1C2C6B8F7300E138F7 /* ResultView.swift in Sources */,
+				5F9DBC872C6F0DCC0064F5B9 /* AudioPlayerService.swift in Sources */,
 				5FB2FDDB2C6B83CA00E138F7 /* AppDelegate.swift in Sources */,
 				5FB2FE272C6B9B7700E138F7 /* ThemeFont.swift in Sources */,
 				5FB2FDDD2C6B83CA00E138F7 /* SceneDelegate.swift in Sources */,

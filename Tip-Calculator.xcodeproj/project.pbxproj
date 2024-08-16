@@ -13,6 +13,7 @@
 		5F9DBC812C6F003A0064F5B9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DBC802C6F003A0064F5B9 /* Double+Extension.swift */; };
 		5F9DBC842C6F0D9C0064F5B9 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DBC832C6F0D9C0064F5B9 /* click.m4a */; };
 		5F9DBC872C6F0DCC0064F5B9 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */; };
+		5F9DBC8B2C6F328F0064F5B9 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5F9DBC8A2C6F328F0064F5B9 /* CombineCocoa */; };
 		5FB2FDDB2C6B83CA00E138F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */; };
 		5FB2FDDD2C6B83CA00E138F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */; };
 		5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDDE2C6B83CA00E138F7 /* CalculatorVC.swift */; };
@@ -72,6 +73,7 @@
 		5F9DBC802C6F003A0064F5B9 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		5F9DBC832C6F0D9C0064F5B9 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		5F9DBC882C6F32770064F5B9 /* CombineCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CombineCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FDD72C6B83CA00E138F7 /* Tip-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FDDA2C6B83CA00E138F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB2FDDC2C6B83CA00E138F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9DBC8B2C6F328F0064F5B9 /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +160,7 @@
 		5FB2FDCE2C6B83CA00E138F7 = {
 			isa = PBXGroup;
 			children = (
+				5F9DBC852C6F0DBC0064F5B9 /* service */,
 				5FB2FDD92C6B83CA00E138F7 /* Tip-Calculator */,
 				5FB2FDF02C6B83CB00E138F7 /* Tip-CalculatorTests */,
 				5FB2FDFA2C6B83CB00E138F7 /* Tip-CalculatorUITests */,
@@ -179,7 +183,6 @@
 		5FB2FDD92C6B83CA00E138F7 /* Tip-Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				5F9DBC852C6F0DBC0064F5B9 /* service */,
 				5F9DBC822C6F0D800064F5B9 /* resource */,
 				5FCC872C2C6C99F900991B1D /* ViewModel */,
 				5FCC87272C6C805200991B1D /* model */,
@@ -278,6 +281,7 @@
 		74FB6F1B02F9E1C229B13C92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F9DBC882C6F32770064F5B9 /* CombineCocoa.framework */,
 				5FB2FE0A2C6B856500E138F7 /* CombineCocoa.framework */,
 				15C949686705187F6BF7D945 /* Pods_Tip_Calculator.framework */,
 				EE76A7AF5385EDBB12E8060B /* Pods_Tip_Calculator_Tip_CalculatorUITests.framework */,
@@ -317,6 +321,9 @@
 			dependencies = (
 			);
 			name = "Tip-Calculator";
+			packageProductDependencies = (
+				5F9DBC8A2C6F328F0064F5B9 /* CombineCocoa */,
+			);
 			productName = "Tip-Calculator";
 			productReference = 5FB2FDD72C6B83CA00E138F7 /* Tip-Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -938,6 +945,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5F9DBC8A2C6F328F0064F5B9 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FB2FE132C6B886E00E138F7 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
 		5FB2FE0F2C6B87E800E138F7 /* InlineSnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5FB2FE0E2C6B87E800E138F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;

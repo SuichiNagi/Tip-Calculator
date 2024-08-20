@@ -15,14 +15,15 @@ final class Tip_CalculatorTests: XCTestCase {
     private var sut: CalculatorViewModel!
     private var cancellable: Set<AnyCancellable>!
     
-    private let logoViewTapSubject = PassthroughSubject<Void, Never>()
-    private let viewTapSubject = PassthroughSubject<Void, Never>()
-    
+    private var viewTapSubject: PassthroughSubject<Void, Never>!
+    private var logoViewTapSubject: PassthroughSubject<Void, Never>!
     private var audioPlayerService: MockAudioPlayerService!
     
     override func setUp() {
         audioPlayerService = .init()
         sut = .init(audioPlayerService: audioPlayerService)
+        logoViewTapSubject = .init()
+        viewTapSubject = .init()
         cancellable = .init()
         super.setUp()
     }
@@ -31,6 +32,9 @@ final class Tip_CalculatorTests: XCTestCase {
         super.tearDown()
         sut = nil
         cancellable = nil
+        logoViewTapSubject = nil
+        viewTapSubject = nil
+        audioPlayerService = nil
     }
     
     func testResultWithoutTipFor1Person() {
@@ -109,7 +113,7 @@ final class Tip_CalculatorTests: XCTestCase {
         }.store(in: &cancellable)
     }
     
-    func testSoundPlayedAndCalculatorResetOnLgoViewTap() {
+    func testSoundPlayedAndCalculatorResetOnLogoViewTap() {
         //given
         let input = buildInput(bill: 100, tip: .tenPercent, split: 2)
         let output = sut.transform(input: input)

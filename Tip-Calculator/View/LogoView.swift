@@ -11,6 +11,7 @@ class LogoView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
+        accessibilityIdentifier = ScreenIdentifier.LogoView.logoView.rawValue
         setUI()
     }
     

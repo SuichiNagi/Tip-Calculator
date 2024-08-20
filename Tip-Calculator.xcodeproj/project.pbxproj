@@ -11,6 +11,9 @@
 		5F045F642C6DA88900D737DE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F045F632C6DA88900D737DE /* String+Extension.swift */; };
 		5F045F662C6DC5FF00D737DE /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F045F652C6DC5FF00D737DE /* UIResponder+Extension.swift */; };
 		5F0B94C12C7448A000208BEC /* Tip_CalculatorSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B94C02C7448A000208BEC /* Tip_CalculatorSnapshotTests.swift */; };
+		5F0B94C32C7461FD00208BEC /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B94C22C7461FD00208BEC /* ScreenIdentifier.swift */; };
+		5F0B94C42C7461FD00208BEC /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B94C22C7461FD00208BEC /* ScreenIdentifier.swift */; };
+		5F0B94C62C74640100208BEC /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B94C52C74640100208BEC /* CalculatorScreen.swift */; };
 		5F9DBC812C6F003A0064F5B9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DBC802C6F003A0064F5B9 /* Double+Extension.swift */; };
 		5F9DBC842C6F0D9C0064F5B9 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DBC832C6F0D9C0064F5B9 /* click.m4a */; };
 		5F9DBC872C6F0DCC0064F5B9 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */; };
@@ -22,7 +25,6 @@
 		5FB2FDE72C6B83CB00E138F7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2FDE62C6B83CB00E138F7 /* Base */; };
 		5FB2FDF22C6B83CB00E138F7 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDF12C6B83CB00E138F7 /* Tip_CalculatorTests.swift */; };
 		5FB2FDFC2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDFB2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift */; };
-		5FB2FDFE2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2FDFD2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift */; };
 		5FB2FE102C6B87E800E138F7 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE0F2C6B87E800E138F7 /* InlineSnapshotTesting */; };
 		5FB2FE122C6B87E800E138F7 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE112C6B87E800E138F7 /* SnapshotTesting */; };
 		5FB2FE152C6B886E00E138F7 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB2FE142C6B886E00E138F7 /* CombineCocoa */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -72,6 +74,8 @@
 		5F045F632C6DA88900D737DE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5F045F652C6DC5FF00D737DE /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 		5F0B94C02C7448A000208BEC /* Tip_CalculatorSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorSnapshotTests.swift; sourceTree = "<group>"; };
+		5F0B94C22C7461FD00208BEC /* ScreenIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenIdentifier.swift; sourceTree = "<group>"; };
+		5F0B94C52C74640100208BEC /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		5F9DBC802C6F003A0064F5B9 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		5F9DBC832C6F0D9C0064F5B9 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		5F9DBC862C6F0DCC0064F5B9 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
@@ -87,7 +91,6 @@
 		5FB2FDF12C6B83CB00E138F7 /* Tip_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorTests.swift; sourceTree = "<group>"; };
 		5FB2FDF72C6B83CB00E138F7 /* Tip-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FDFB2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
-		5FB2FDFD2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5FB2FE0A2C6B856500E138F7 /* CombineCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CombineCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB2FE192C6B8EBE00E138F7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		5FB2FE1B2C6B8F7300E138F7 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -215,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB2FDFB2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift */,
-				5FB2FDFD2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift */,
+				5F0B94C52C74640100208BEC /* CalculatorScreen.swift */,
 			);
 			path = "Tip-CalculatorUITests";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			children = (
 				5FCC87282C6C806500991B1D /* Tip.swift */,
 				5F045F612C6D9E6000D737DE /* Result.swift */,
+				5F0B94C22C7461FD00208BEC /* ScreenIdentifier.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -564,6 +568,7 @@
 				5FCC87262C6C67F300991B1D /* AmountView.swift in Sources */,
 				5F045F662C6DC5FF00D737DE /* UIResponder+Extension.swift in Sources */,
 				5FFC46F42C6E25CD00CCE9E6 /* Int+Extension.swift in Sources */,
+				5F0B94C32C7461FD00208BEC /* ScreenIdentifier.swift in Sources */,
 				5FB2FDDF2C6B83CA00E138F7 /* CalculatorVC.swift in Sources */,
 				5F045F642C6DA88900D737DE /* String+Extension.swift in Sources */,
 				5FCC87242C6C57F300991B1D /* UIView+Extension.swift in Sources */,
@@ -599,8 +604,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB2FDFE2C6B83CB00E138F7 /* Tip_CalculatorUITestsLaunchTests.swift in Sources */,
+				5F0B94C42C7461FD00208BEC /* ScreenIdentifier.swift in Sources */,
 				5FB2FDFC2C6B83CB00E138F7 /* Tip_CalculatorUITests.swift in Sources */,
+				5F0B94C62C74640100208BEC /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

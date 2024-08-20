@@ -10,9 +10,11 @@ import UIKit
 class AmountView: UIView {
     
     private let title: String
+    private let amountLabelIdentifier: String
     
-    init(title: String) {
+    init(title: String, amountLabelIdentifier: String) {
         self.title = title
+        self.amountLabelIdentifier = amountLabelIdentifier
         super.init(frame: .zero)
         setUI()
     }
@@ -51,6 +53,7 @@ class AmountView: UIView {
         let text = NSMutableAttributedString(string: "₱0", attributes: [.font: ThemeFont.bold(ofSize: 24)])
         text.addAttributes([.font: ThemeFont.bold(ofSize: 16)], range: NSMakeRange(0, 1))
         label.attributedText = text
+        label.accessibilityIdentifier = amountLabelIdentifier
         return label
     }()
     
